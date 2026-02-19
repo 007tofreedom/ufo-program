@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "ufo-program"
+version = "0.1.0"
+description = "A Python package for UFO programs."
+authors = ["007tofreedom <your-email@example.com>"]
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
