@@ -1,14 +1,63 @@
-[tool.poetry]
+[project]
 name = "ufo-program"
-version = "0.1.0"
-description = "A Python package for UFO programs."
-authors = ["007tofreedom <your-email@example.com>"]
+version = "0.1.0"  # bump this when you make changes
+description = "ASCII UFO simulator for the terminal – command an animated disc with upgrades, tractor beam, resource scanning, and real UFO sightings API integration"
 readme = "README.md"
-license = "MIT"
+license = {text = "MIT"}  # or {file = "LICENSE"} if you have a LICENSE file
+requires-python = ">=3.8"
+authors = [
+    {name = "007tofreedom", email = ""}  # add your email if you want
+]
+keywords = ["ufo", "terminal", "ascii", "game", "simulator", "blessed", "pygame"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Topic :: Games/Entertainment",
+    "Intended Audience :: End Users/Desktop",
+]
 
-[tool.poetry.dependencies]
-python = "^3.8"
+dependencies = [
+    "pygame >=2.0",
+    "requests >=2.25",
+    "colorama >=0.4",
+    "blessed >=1.20",
+    "beautifultable >=1.0",
+]
+
+# Optional: add these if you want better console UX
+# [project.optional-dependencies]
+# dev = ["black", "ruff", "mypy"]
+
+[project.scripts]
+ufo-program = "ufo_interactive_super_advanced_disc_combined_with_api_realtime:main"
+
+[project.urls]
+Homepage = "https://github.com/007tofreedom/ufo-program"
+Repository = "https://github.com/007tofreedom/ufo-program.git"
+Issues = "https://github.com/007tofreedom/ufo-program/issues"
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+requires = ["setuptools >= 61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+# Optional: if you want to keep using poetry instead (but setuptools is simpler here)
+# [tool.poetry]
+# name = "ufo-program"
+# version = "0.1.0"
+# description = "..."
+# authors = ["Your Name <you@example.com>"]
+# readme = "README.md"
+# [tool.poetry.dependencies]
+# python = "^3.8"
+# pygame = "^2.0"
+# ... etc.
+# [build-system]
+# requires = ["poetry-core>=1.0.0"]
+# build-backend = "poetry.core.masonry.api"
