@@ -1,9 +1,5 @@
-# UFO Program Dependencies
-pygame>=2.5.0          # For visual interface and simulation
-numpy>=1.24.0          # Math and frequency calculations
-requests>=2.31.0       # NASA API / external data
-rich>=13.0.0           # Beautiful terminal output (optional but nice)
-colorama>=0.4.6        # Cross-platform colors
-
-# Built-in (no need to list):
-# time, random, json, os, sys
+pygame
+numpy
+requests
+rich
+colorama
