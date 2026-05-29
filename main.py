@@ -1,35 +1,49 @@
 """
 UFO Program - Sentinel Frequency Research
-Simple Launcher with Loading Screen
 """
 
 import time
 import sys
 
-def loading_bar(duration=4):
-    print("Initializing Sentinel Frequency System...")
-    print("=" * 70)
-    print("🛸 UFO PROGRAM - SENTINEL FREQUENCY ONLINE 🛸")
-    print("Green Frequency • Lightning Bug Cloak • ISS 2.0 Link")
-    print("No Harm Near Protocol Active")
-    print("=" * 70)
-    print()
-    
-    # Loading bar
-    print("Loading Core Systems...")
-    for i in range(21):
-        percent = i * 5
-        bar = "█" * i + "░" * (20 - i)
-        sys.stdout.write(f"\r[{bar}] {percent}%")
+def slow_print(text, delay=0.03):
+    for char in text:
+        sys.stdout.write(char)
         sys.stdout.flush()
-        time.sleep(duration / 20)  # Makes it last ~4 seconds total
+        time.sleep(delay)
+    print()
+
+def loading_screen():
+    print("=" * 80)
+    slow_print("🛸 INITIALIZING SENTINEL FREQUENCY CORE...")
+    print("=" * 80)
     
-    print("\n\n✅ Systems Online")
-    print("Launching full simulation...\n")
+    slow_print("Green Frequency Online...")
+    time.sleep(0.8)
+    slow_print("Lightning Bug Cloak Connected...")
+    time.sleep(0.8)
+    slow_print("ISS 2.0 Link Established...")
+    time.sleep(1.0)
+    
+    # Progress bar
+    print("\nActivating No Harm Near Protocol...")
+    for i in range(21):
+        bar = "█" * i + "░" * (20 - i)
+        sys.stdout.write(f"\r[{bar}] {i*5}%")
+        sys.stdout.flush()
+        time.sleep(0.15)
+    
+    print("\n\n✅ FULL SYSTEM AWAKENED")
+    print("No Harm Near • Peace Frequency Active")
+    print("=" * 80)
+    print()
 
-# Show loading screen
-loading_bar()
-
-# Launch your original big program
-from ufo_interactive_super_advanced_disc_combined_with_api_realtime import main as run_ufo
-run_ufo()
+# === Main Program ===
+if __name__ == "__main__":
+    loading_screen()
+    
+    print("Launching full Sentinel Simulation...\n")
+    time.sleep(1.2)
+    
+    # Run your original big file
+    from ufo_interactive_super_advanced_disc_combined_with_api_realtime import main as run_ufo
+    run_ufo()
