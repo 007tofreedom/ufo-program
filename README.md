@@ -3,7 +3,7 @@
 ### 🎥 Latest Demo Video
 ![UFO Simulation](ufo-simulation.gif)
 
-*(New boot sequence + full interactive simulation)*
+*(New boot sequence + full interactive simulation — just recorded)*
 
 ---
 
@@ -19,6 +19,7 @@ git clone https://github.com/007tofreedom/ufo-program.git
 cd ufo-program
 pip install -r requirements.txt
 python3 main.py
+
 
 ### 1. Clone the repo
 
