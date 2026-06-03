@@ -1,23 +1,27 @@
-# UFO Program - Sentinel Frequency Research 🛸🌿
+# 🛸 ufo-program
 
-**Real-time green frequency UFO surveillance with Lightning Bug Cloak integration.**
-
+### 🎥 Latest Demo Video
 ![UFO Simulation](ufo-simulation.gif)
 
-> *The GIF above auto-plays and loops as you scroll — watch the sentinel frequency in action.*
+*(New boot sequence + full interactive simulation)*
 
 ---
 
-### 🚀 One-Command Quick Start
+**Old-school CLI UFO Sentinel Frequency Simulator**
+
+Middle school vibes — hacking CMD on locked computers 😂  
+Peaceful retro terminal tool with Sentinel scanning, Lightning Bug Cloak, God’s Radar & No Harm Near protocol.
+
+### 🚀 Quick Start (Copy & Paste)
 
 ```bash
 git clone https://github.com/007tofreedom/ufo-program.git
 cd ufo-program
 pip install -r requirements.txt
-python main.py
-## Quick Start
+python3 main.py
 
 ### 1. Clone the repo
+
 ```bash
 git clone https://github.com/007tofreedom/ufo-program.git
 cd ufo-program
